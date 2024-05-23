@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+
+  <style>
+    body {
+      background-image: url('./dede.jpg');
+      background-position: center;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      background-color: skyblue;
+    }
+
+    li {
+      display: inline;
+      float: left;
+    }
+
+    li a, .dropdown {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: #555;
+    }
+
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-contents a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-contents a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+
+    .dropdown {
+      display: inline-block;
+    }
+
+    .search-form {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .search-form input[type="search"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .search-form button {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      margin-left: 10px;
+      background-color: green;
+      color: white;
+      cursor: pointer;
+    }
+
+    .search-form button:hover {
+      background-color: darkgreen;
+    }
+
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    marquee {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="./home.html">HOME</a></li>
+    <li><a href="./about.html">ABOUT</a></li>
+    <li><a href="./contact.html">CONTACT</a></li>
+    <li><a href="./course.html">COURSE</a></li>
+    <li><a href="./lesson.html">LESSON</a></li>
+    <li><a href="./discussion_form.html">DISCUSSION_FORM</a></li>
+    <li><a href="./enrollment.html">ENROLLMENT</a></li>
+    <li><a href="./quiz.html">QUIZ</a></li>
+    <li><a href="./instructors.html">INSTRUCTORS</a></li>
+    <li><a href="./submissions.html">SUBMISSIONS</a></li>
+    <li><a href="./modules.html">MODULES</a></li>
+    <li><a href="./payment.html">PAYMENT</a></li>
+    <li><a href="./blockchain_resources.html">BLOCKCHAIN_RESOURCES</a></li>
+    <li class="dropdown">
+      <a href="#">Settings</a>
+      <div class="dropdown-contents">
+        <a href="logout.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+
+  <form class="search-form" role="search" action="search.php">
+    <input type="search" placeholder="Search" aria-label="Search">
+    <button type="submit">Search</button>
+  </form>
+
+
+    <h1>Discussion Form</h1>
+
+    <form method="POST" action="discussion_form.php">
+        <label for="post_title">Post Title:</label>
+        <input type="text" id="post_title" name="post_title" required><br><br>
+
+        <label for="post_content">Post Content:</label>
+        <input type="text" id="post_content" name="post_content" required><br><br>
+
+        <label for="post_date">Post Date:</label>
+        <input type="date" id="post_date" name="post_date" required><br><br>
+
+        <input type="submit" name="add" value="Insert">
+
+        <a href="./home.html" class="goBack">Go Back to Home</a>
+    </form>
+</body>
+</html>

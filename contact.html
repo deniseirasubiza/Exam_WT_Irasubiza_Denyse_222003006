@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Title correction -->
+  <title>CONTACT US</title>
+  <style>
+    /* Header styles */
+    header {
+      background-color: #333; /* Dark background color */
+      padding: 10px; /* Add some padding */
+      color: white; /* Text color */
+      text-align: center; /* Center align text */
+    }
+
+    header form {
+      display: inline-block; /* Display form inline */
+      margin-bottom: 10px; /* Add some space below the form */
+    }
+
+    header input[type="search"] {
+      padding: 8px; /* Add padding to search input */
+      margin-right: 5px; /* Add some space to the right */
+      border: none; /* Remove border */
+      border-radius: 5px; /* Add border radius */
+    }
+
+    header button {
+      padding: 8px 15px; /* Add padding to button */
+      border: none; /* Remove border */
+      border-radius: 5px; /* Add border radius */
+      background-color: #28a745; /* Green background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Change cursor to pointer on hover */
+    }
+
+    header button:hover {
+      background-color: #218838; /* Darken background color on hover */
+    }
+
+    /* Navigation menu styles */
+    header ul {
+      list-style-type: none; /* Remove bullet points */
+      padding: 0; /* Remove default padding */
+      text-align: center; /* Center align text */
+    }
+
+    header ul li {
+      display: inline; /* Display horizontally */
+      margin-right: 10px; /* Add some spacing between list items */
+    }
+
+    header ul li a {
+      color: white; /* Link color */
+      text-decoration: none; /* Remove underline */
+      padding: 10px; /* Add padding */
+    }
+
+    header ul li a:hover {
+      background-color: #555; /* Darken background on hover */
+    }
+
+    /* Dropdown menu styles */
+    header .dropdown-contents {
+      display: none; /* Hide dropdown menu by default */
+      position: absolute; /* Position it absolutely */
+      background-color: #333; /* Background color */
+      min-width: 100px; /* Minimum width */
+      z-index: 1; /* Ensure it appears above other elements */
+    }
+
+    header .dropdown-contents a {
+      display: block; /* Display block */
+      color: white; /* Text color */
+      padding: 10px; /* Add padding */
+      text-decoration: none; /* Remove underline */
+    }
+
+    header .dropdown:hover .dropdown-contents {
+      display: block; /* Show dropdown on hover */
+    }
+  </style>
+</head>
+
+<body bgcolor="gray">
+  <header>
+    <form class="d-flex" role="search" action="search.php">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <ul>
+      <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./course.html">COURSE</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./lesson.html">LESSON</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./discussion_form.html">DISCUSSION_FORM</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./enrollment.html">ENROLLMENT</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./quiz.html">QUIZ</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./instructors.html">INSTRUCTORS</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./submissions.html">SUBMISSIONS</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./modules.html">MODULES</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./payment.html">PAYMENT</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./blockchain_resources.html">BLOCKCHAIN_RESOURCES</a></li>
+      <li class="dropdown" style="display: inline; margin-right: 10px;">
+        <a href="#" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">Settings</a>
+        <div class="dropdown-contents">
+          <!-- Links inside the dropdown menu -->
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+  <section>
+    <h2><bold><u>CONTACT US</u></bold></h2>
+    <ul>
+      <li>Address: Kigali</li>
+      <li>Phone: +250 781844115</li>
+      <li>Email: booking@gmail.com</li>
+    </ul>
+    <p>Connect with us on social media or social networking:
+      <a href="https://www.twitter.com/stockmgt">Twitter</a>
+      <a href="https://www.facebook.com/stockmgt">Facebook</a>
+      <a href="https://www.instagram.com/stockmgt">Instagram</a>
+      <a href="https://www.linkedin.com/stockmgt">LinkedIn</a>
+    </p>
+  </section>
+  <footer>
+    <center><b><h2>UR CBE BIT &copy, 2024 &reg, Designed by: @</h2></b></center>
+  </footer>
+</body>
+</html>
